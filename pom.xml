@@ -22,6 +22,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+
+		<jackson.version>2.9.7</jackson.version>
+		<jade4j.version>1.2.7</jade4j.version>
 	</properties>
 
 	<dependencies>
@@ -32,12 +35,12 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.jaxrs</groupId>
 			<artifactId>jackson-jaxrs-json-provider</artifactId>
-			<version>2.9.7</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>de.neuland-bfi</groupId>
 			<artifactId>jade4j</artifactId>
-			<version>1.2.7</version>
+			<version>${jade4j.version}</version>
 		</dependency>
 
 		<dependency>
