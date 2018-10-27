@@ -28,10 +28,13 @@ public class EchoResource {
     @Value("${app.text}")
     private String text;
 
+    @Value("${app.subtext}")
+    private String subText;
+
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public EchoMessage getMessage() {
-        return new EchoMessage(text);
+        return new EchoMessage(text, subText);
     }
 
     @GET
@@ -43,6 +46,7 @@ public class EchoResource {
 
         Map<String, Object> model = new HashMap<>();
         model.put("text", text);
+        model.put("subtext", subText);
 
         return config.renderTemplate(template, model);
     }

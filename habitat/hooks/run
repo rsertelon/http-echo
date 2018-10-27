@@ -1,3 +1,4 @@
 #!/bin/sh
 
-java -jar {{pkg.path}}/lib/{{pkg.name}}-{{pkg.version}}.jar --spring.config.location=file:{{pkg.svc_config_path}}/application.properties
+java -jar {{pkg.path}}/lib/http-echo-{{pkg.version}}.jar \
+     --spring.config.location=file:{{pkg.svc_config_path}}/application.properties
